@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header/Header';  // Assuming Header is in this path
+import Footer from './components/Footer/Footer';  // Assuming Footer is in this path
+import Home from './components/Home/Home';                  // Assuming Home component is in a "pages" folder
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Header />
+      <main>
+        <Home />  {/* Render the homepage content */}
+      </main>
+      <Footer />
     </div>
   );
 }

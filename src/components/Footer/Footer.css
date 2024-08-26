@@ -1,0 +1,112 @@
+/* Footer styling */
+.footer {
+  background: linear-gradient(to bottom, #E6C38D, #ffffff00);
+  padding: 30px;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative; /* Ensures footer stays within page flow */
+  width: 100%;
+  max-height: 522px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* Contact info and form styling */
+.contact-info {
+  flex: 1;
+  margin-left: 10rem;
+  margin-right: -30rem;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: black;
+}
+
+.description {
+  margin-top: 10px;
+  /* font-size: 0.9rem !important;
+  text-align: left !important;
+  top: -5px !important; */
+}
+
+.footer .description {
+  text-align: left;
+  top: -5px;
+  font-size: 0.9rem;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.input-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  width: calc(91% - 10px);
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  height: 100px;
+  margin-bottom: 15px;
+  width: 60rem;
+}
+
+.send-button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 110px;
+}
+
+.send-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-height: none;
+  }
+
+  .contact-info, .contact-form {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+}
